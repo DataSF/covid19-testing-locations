@@ -1,0 +1,23 @@
+{
+  "name": "covid19-testing-locations",
+  "version": "1.0.0",
+  "description": "Simple map for COVID-19 Testing Locations",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server . -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonlally/covid19-testing-locations.git"
+  },
+  "author": "Jason Lally",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasonlally/covid19-testing-locations/issues"
+  },
+  "homepage": "https://github.com/jasonlally/covid19-testing-locations#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
