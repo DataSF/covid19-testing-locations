@@ -852,7 +852,7 @@
       var cta = currentFeature.properties.cta_link ? '<div class="sfgov-cta-button__container"><div class="field field--type-link __link field__item"><a class="cta-link" href="' + currentFeature.properties.cta_link + '">' + currentFeature.properties.cta_text + '</a></div></div>' : '<div><strong>' + currentFeature.properties.cta_text + '</strong></div>'
       var phone = (currentFeature.properties.cta_link && currentFeature.properties.cta_link.includes('tel')) ?
         '<p><strong>Phone:</strong> ' + currentFeature.properties.phone_number_formatted + '</p>' : '';
-      var popup = new mapboxgl.Popup({ closeOnClick: false })
+      var popup = new mapboxgl.Popup({ closeOnClick: true })
         .setLngLat(currentFeature.geometry.coordinates)
         .setHTML('<h3>' + currentFeature.properties.name + '</h3>' +
           '<h4>' + currentFeature.properties.address + '</h4>' +
