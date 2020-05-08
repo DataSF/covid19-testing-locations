@@ -6,9 +6,10 @@
   <title>COVID-19 Testing Locations | San Francisco</title>
   <meta name='robots' content='noindex, nofollow'>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  <link rel="stylesheet" media="all" href="index.css" />
   <link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Rubik:300,400,500,700">
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" media="all" href="/index.css" />
+
   <!-- Mapbox -->
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js'></script>
 
@@ -32,9 +33,6 @@
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-NLN95H2');</script>
   <!-- End Google Tag Manager -->
-
-
-
 </head>
 
 <body>
@@ -119,7 +117,6 @@
       locations = data;
       return;
     });
-    console.log(locations);
 
     var filterState = ['Public', 'Private']
 
