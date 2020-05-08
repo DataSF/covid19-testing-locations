@@ -451,6 +451,8 @@
     }
 
     mapboxgl.accessToken = 'pk.eyJ1IjoiZGF0YXNmIiwiYSI6ImNrOXB4aGpxczBib2szam1vdTdvZ2tlZTIifQ.Jo2x1aJbnvoOqb5z0f5A4Q';
+    var bounds = [ -122.517910874663, 37.6044780500533, -122.354995082683, 37.8324430069081];
+  
     /** 
      * Add the map to the page
     */
@@ -458,7 +460,9 @@
       container: 'map',
       style: 'mapbox://styles/mapbox/light-v10',
       center: [-122.431297, 37.773972],
-      zoom: 12
+      zoom: 12,
+      pitchWithRotate: false,
+      maxBounds: bounds
     });
 
     var geolocate = new mapboxgl.GeolocateControl({
@@ -481,7 +485,7 @@
       return response.json();
     })
     .then(function(data) {
-      locations = data
+      locations = data;
       return;
     });
     console.log(locations);
