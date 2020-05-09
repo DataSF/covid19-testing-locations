@@ -285,9 +285,10 @@ button.mapboxgl-ctrl-geolocate {
   background-repeat: no-repeat;
 }
 
+/*
 #label-all-sites {
   background-image: url(marker-private.svg);
-}
+}*/
 
 #label-public-sites {
   background-image: url(marker-public.svg);
