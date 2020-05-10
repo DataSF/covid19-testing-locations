@@ -146,6 +146,13 @@
       });
 
       map.addControl(geocoder, 'top-left');
+      map.addControl(new mapboxgl.NavigationControl({
+        showCompass: false
+      }));
+      // disable map rotation using right click + drag
+      map.dragRotate.disable();
+      // disable map rotation using touch rotation gesture
+      map.touchZoomRotate.disableRotation();
       /** 
        * This is where your '.addLayer()' used to be, instead
        * add only the source without styling a layer
