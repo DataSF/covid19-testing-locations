@@ -104,7 +104,7 @@
 
     map.addControl(geolocate, 'top-left');
 
-    var dataUrl = "https://data.sfgov.org/resource/dtit-7gp4.geojson"
+    var dataUrl = "https://data.sfgov.org/resource/dtit-7gp4.geojson?$where=point+is+not+null"
     let locations;
 
     fetch(dataUrl)
